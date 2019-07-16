@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  h1= title
+  if user 
+    p Hello, #{user.username}-san
+    a(href="/logout") Logoutはこちら
+  else
+    a(href="/login") Loginする
